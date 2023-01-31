@@ -1,8 +1,8 @@
 /* eslint-disable max-params */
 /* eslint-disable no-unused-vars */
-import { Characters } from './Characters';
+import { Character } from './Character';
 
-export class Fighter extends Characters {
+export class Fighter extends Character {
   isLive: boolean;
   constructor(
     public name: string,

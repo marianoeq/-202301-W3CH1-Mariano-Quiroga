@@ -1,18 +1,17 @@
 /* eslint-disable no-unused-vars */
-import { Characters } from './Characters';
+import { Character } from './Character';
 
-export class Adviser extends Characters {
+export class Adviser extends Character {
   isLive: boolean;
 
   constructor(
     public name: string,
     public family: string,
     public age: number,
-    public personAdvises: string[]
+    public personAdvises: Character
   ) {
     super(name, family, age);
     this.isLive = true;
-    this.personAdvises = ['King', 'fighter', 'Adviser', 'squire'];
   }
 
   greeting() {
