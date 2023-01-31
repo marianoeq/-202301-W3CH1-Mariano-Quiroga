@@ -1,6 +1,6 @@
-import { Characters } from './Characters';
+import { Character } from './Character';
 
-export class King extends Characters {
+export class King extends Character {
   isLive: boolean;
   constructor(
     public name: string,

@@ -5,7 +5,7 @@ interface Got {
   age: number;
 }
 
-export class Characters implements Got {
+export class Character implements Got {
   isLive: boolean;
   private serie: string;
   constructor(public name: string, public family: string, public age: number) {

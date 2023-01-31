@@ -1,8 +1,2 @@
-export const template = `
-<header>
-<h1>Got challenge</h1>
-</header>
-`;
-
-document.querySelector('#app')!.innerHTML = template;
-console.log('hola');
+/* eslint-disable no-unused-vars */
+import { charactersData } from './mocks/personajes';

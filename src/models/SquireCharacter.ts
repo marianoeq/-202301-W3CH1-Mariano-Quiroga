@@ -1,15 +1,15 @@
 /* eslint-disable max-params */
 /* eslint-disable no-unused-vars */
-import { Characters } from './Characters';
+import { Character } from './Character';
 import { Fighter } from './FighterCharacter';
 
-export class Squire extends Characters {
+export class Squire extends Character {
   isLive: boolean = true;
   constructor(
     public name: string,
     public family: string,
     public age: number,
-    public boss: Fighter,
+    public boss: Character,
     public servility: 0 | 1 | 2 | 3 | 4 | 5 | 7 | 8 | 9 | 10
   ) {
     super(name, family, age);
@@ -24,11 +24,4 @@ export class Squire extends Characters {
   }
 }
 
-const pepe = new Squire(
-  'pepe',
-  'pepe3',
-  45,
-  new Fighter('jksjdj', 'jsj', 478, 'ahcha', 5),
-  9
-);
-console.log(pepe);
+const pepe = new Fighter('jksjdj', 'jsj', 478, 'ahcha', 5);
