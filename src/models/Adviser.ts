@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Characters } from './characters';
+import { Characters } from './Characters';
 
 export class Adviser extends Characters {
   isLive: boolean;

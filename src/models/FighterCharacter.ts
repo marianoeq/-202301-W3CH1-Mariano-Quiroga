@@ -1,6 +1,6 @@
 /* eslint-disable max-params */
 /* eslint-disable no-unused-vars */
-import { Characters } from './characters';
+import { Characters } from './Characters';
 
 export class Fighter extends Characters {
   isLive: boolean;

@@ -1,4 +1,4 @@
-import { Characters } from './characters';
+import { Characters } from './Characters';
 
 export class King extends Characters {
   isLive: boolean;
