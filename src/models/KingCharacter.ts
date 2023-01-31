@@ -1,6 +1,7 @@
-import { Characters } from './characters';
+import { Characters } from './Characters';
 
 export class King extends Characters {
+  isLive: boolean;
   constructor(
     public name: string,
     public family: string,
@@ -8,17 +9,15 @@ export class King extends Characters {
     public yearsActive: number
   ) {
     super(name, family, age);
+    this.isLive = true;
     this.yearsActive = yearsActive;
   }
 
   greeting() {
-    const msg = `<p>Van a morir todos</p>`;
-    const div = document.querySelector('#app');
-    div!.innerHTML = msg;
+    return super.greeting(`Van a morir todos`);
   }
 
   died() {
     super.died();
-    this.isLive = false;
   }
 }

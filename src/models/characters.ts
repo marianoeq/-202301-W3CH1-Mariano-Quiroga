@@ -1,23 +1,23 @@
+/* eslint-disable no-unused-vars */
 interface Got {
   name: string;
   family: string;
   age: number;
-  isLive: boolean;
-  serie: string;
 }
 
 export class Characters implements Got {
-  isLive;
-  serie;
+  isLive: boolean;
+  private serie: string;
   constructor(public name: string, public family: string, public age: number) {
-    this.name = name;
-    this.family = family;
-    this.age = age;
     this.isLive = true;
     this.serie = 'Game of thrones';
   }
 
-  died() {
+  greeting(msg: string): string {
+    return msg;
+  }
+
+  died(): void {
     this.isLive = false;
   }
 }
